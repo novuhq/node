@@ -10,6 +10,7 @@
     "codecov",
     "commitlint",
     "dependabot",
+    "notifire",
     "editorconfig",
     "esnext",
     "execa",
