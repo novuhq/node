@@ -12,8 +12,8 @@ test('should create a valid request with API Keys', async (t) => {
 
   const notifire = new Notifire('TEST_KEY');
 
-  await notifire.trigger('test-event', '123', {
-    name: 'Test'
+  await notifire.trigger('test-event', {
+    $user_id: 'Test'
   });
 
   t.assert(adapter.history.post[0].headers.Authorization, 'ApiKey TEST_KEY');
@@ -27,14 +27,15 @@ test('should pass the trigger contents successfully', async (t) => {
 
   const notifire = new Notifire('TEST_KEY');
 
-  await notifire.trigger('test-event', '123', {
+  await notifire.trigger('test-event', {
+    $user_id: '123',
     name: 'Test'
   });
 
   const body = JSON.parse(adapter.history.post[0].data);
 
   t.is(body.name, 'test-event');
-  t.is(body.payload.userId, '123');
+  t.is(body.payload.$user_id, '123');
   t.is(body.payload.name, 'Test');
 });
 

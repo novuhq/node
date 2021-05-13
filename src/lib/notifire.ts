@@ -4,6 +4,14 @@ export interface INotifireConfig {
   API_URL: string;
 }
 
+export interface IEventPayload {
+  $user_id: string;
+  $first_name?: string;
+  $last_name?: string;
+  $email?: string;
+  [key: string]: any;
+}
+
 export class Notifire {
   private http: AxiosInstance;
 
@@ -20,7 +28,7 @@ export class Notifire {
     });
   }
 
-  async trigger(eventName: string, userId: string, payload = {}) {
+  async trigger(eventName: string, payload: IEventPayload) {
     if (!eventName) {
       throw new Error('eventName must be specified');
     }
@@ -28,7 +36,6 @@ export class Notifire {
     return await this.http.post(`/events/trigger`, {
       name: eventName,
       payload: {
-        userId,
         ...payload
       }
     })
