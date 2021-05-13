@@ -1,6 +1,6 @@
 {
   "name": "@notifire/node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A nodejs package for interacting with the notifire api",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
