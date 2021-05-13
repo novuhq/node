@@ -10,7 +10,6 @@
     "plugin:eslint-comments/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
-    "plugin:functional/lite",
     "prettier",
     "prettier/@typescript-eslint"
   ],
@@ -29,6 +28,10 @@
     "sort-imports": [
       "error",
       { "ignoreDeclarationSort": true, "ignoreCase": true }
-    ]
+    ],
+    "functional/no-class": "off",
+    "functional/prefer-readonly-type": "off",
+    "functional/no-this-expression": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }
