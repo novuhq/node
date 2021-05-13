@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>INotifireConfig | @notifire/node</title>
+	<title>IEventPayload | @notifire/node</title>
 	<meta name="description" content="Documentation for @notifire/node">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="inotifireconfig.html">INotifireConfig</a>
+					<a href="ieventpayload.html">IEventPayload</a>
 				</li>
 			</ul>
-			<h1>Interface INotifireConfig</h1>
+			<h1>Interface IEventPayload</h1>
 		</div>
 	</div>
 </header>
@@ -70,9 +70,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">INotifireConfig</span>
+						<span class="target">IEventPayload</span>
 					</li>
 				</ul>
+			</section>
+			<section class="tsd-panel tsd-kind-interface">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
@@ -81,7 +85,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="inotifireconfig.html#api_url" class="tsd-kind-icon">API_<wbr>URL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieventpayload.html#_email" class="tsd-kind-icon">$email</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieventpayload.html#_first_name" class="tsd-kind-icon">$first_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieventpayload.html#_last_name" class="tsd-kind-icon">$last_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ieventpayload.html#_user_id" class="tsd-kind-icon">$user_<wbr>id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,12 +97,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="api_url" class="tsd-anchor"></a>
-					<h3>API_<wbr>URL</h3>
-					<div class="tsd-signature tsd-kind-icon">API_<wbr>URL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="_email" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> $email</h3>
+					<div class="tsd-signature tsd-kind-icon">$email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/notifirehq/node/blob/c2cca0c/src/lib/notifire.ts#L4">lib/notifire.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/notifirehq/node/blob/c2cca0c/src/lib/notifire.ts#L11">lib/notifire.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_first_name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> $first_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">$first_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/notifirehq/node/blob/c2cca0c/src/lib/notifire.ts#L9">lib/notifire.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_last_name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> $last_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">$last_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/notifirehq/node/blob/c2cca0c/src/lib/notifire.ts#L10">lib/notifire.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_user_id" class="tsd-anchor"></a>
+					<h3>$user_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">$user_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/notifirehq/node/blob/c2cca0c/src/lib/notifire.ts#L8">lib/notifire.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,21 +151,30 @@
 					<li class=" tsd-kind-class">
 						<a href="../classes/notifire.html" class="tsd-kind-icon">Notifire</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="ieventpayload.html" class="tsd-kind-icon">IEvent<wbr>Payload</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="inotifireconfig.html" class="tsd-kind-icon">INotifire<wbr>Config</a>
+						<a href="ieventpayload.html" class="tsd-kind-icon">IEvent<wbr>Payload</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="inotifireconfig.html#api_url" class="tsd-kind-icon">API_<wbr>URL</a>
+								<a href="ieventpayload.html#_email" class="tsd-kind-icon">$email</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ieventpayload.html#_first_name" class="tsd-kind-icon">$first_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ieventpayload.html#_last_name" class="tsd-kind-icon">$last_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ieventpayload.html#_user_id" class="tsd-kind-icon">$user_<wbr>id</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="inotifireconfig.html" class="tsd-kind-icon">INotifire<wbr>Config</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
