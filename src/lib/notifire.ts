@@ -1,5 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
+import { ChannelTypeEnum } from './enums';
+
 export interface INotifireConfig {
   API_URL: string;
 }
@@ -9,6 +11,7 @@ export interface IEventPayload {
   $first_name?: string;
   $last_name?: string;
   $email?: string;
+  $channels?: ChannelTypeEnum[];
   [key: string]: any;
 }
 
